@@ -45,8 +45,9 @@
   ],
   "theme_color": "#000000",
   "background_color": "#ffffff",
+  "scope": "/",
   "start_url": "https://still-sierra-77650.herokuapp.com/",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "any",
   "description": "An app that allows you to track your budget."
 }
