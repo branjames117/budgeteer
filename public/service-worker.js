@@ -5,6 +5,7 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
   '/',
   './index.html',
+  './manifest.json',
   './css/styles.css',
   './js/idb.js',
   './js/index.js',
@@ -48,7 +49,6 @@ self.addEventListener('activate', function (e) {
 self.addEventListener('fetch', function (e) {
   e.respondWith(
     caches.match(e.request).then(function (request) {
-      console.log(request || e.request);
       return request || fetch(e.request);
     })
   );
