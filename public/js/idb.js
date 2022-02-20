@@ -14,7 +14,7 @@ request.onupgradeneeded = (e) => {
   db.createObjectStore('new_transaction', { autoIncrement: true });
 };
 
-// upon successful conenction
+// upon successful connection
 request.onsuccess = (e) => {
   db = e.target.result;
 
